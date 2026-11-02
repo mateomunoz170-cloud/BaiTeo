@@ -1,0 +1,251 @@
+:root {
+    --bg-main: #f8fafc;
+    --card-bg: #ffffff;
+    --accent-celeste: #F59E0B;
+    --accent-celeste-hover: #0096c7;
+    --accent-celeste-light: #e0f2fe;
+    --text-dark: #111827;
+    --text-muted: #556275;
+    --border-color: #333946;
+    --font-main: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-color: var(--bg-main); /* esto queda para todo lo que está debajo de la línea */
+}
+
+a {
+    color: var(--accent-celeste);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-celeste-hover);
+}
+
+/* HEADER / NAV */
+header {
+    background-color: #111827;
+    border-bottom: 3px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.logo-img {
+    height: 36px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--text-muted);
+    font-weight: 600;
+    padding: 0.4rem 0;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+    color: var(--accent-celeste);
+}
+
+nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent-celeste);
+    border-radius: 2px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 160px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.submenu li {
+  width: 100%;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* LAYOUT BASE */
+main {
+    max-width: 1050px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    flex: 1;
+}
+
+.breadcrumb {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+    color: var(--text-muted);
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-celeste);
+}
+
+/* BOTONES (se usan en varias páginas) */
+.btn {
+    padding: 0.75rem 1.6rem;
+    border-radius: 6px;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #df910c;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #d48b0d;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--bg-main);
+    color: var(--accent-celeste);
+    border-color: var(--accent-celeste);
+    transform: translateY(-2px);
+}
+
+.btn-large {
+    font-size: 1.1rem;
+    padding: 0.9rem 2rem;
+}
+
+/* CAJA DE CONTENIDO Y TÍTULOS (se usan en varias páginas) */
+.content-box {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 45px;
+    height: 3px;
+    background-color: var(--accent-celeste);
+}
+
+.lead-text {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f1f5f9;
+    border-top: 1px solid var(--border-color);
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

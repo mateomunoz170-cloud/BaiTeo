@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Alumnos</title>
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="../nosotros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="../../escudo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../../escudo.png" alt="Escudo C.E.T. N°1" class="logo-img">
+                C.E.T. N°1
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                    <a href="../Nosotros.html">Nosotros</a>
+                    <ul class="submenu">
+                        <li><a href="portal-alumnos.html">Portal Alumnos</a></li>
+                        <li><a href="../Portal Docentes/portal-docentes.html">Portal Docentes</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="../../Proyectos/Proyectos.html">Proyectos</a></li>
+                    <li><a href="../../Php/foro.php">Foro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb"><a href="Inicio.html">Inicio</a> / Portal Alumnos</div>
+
+        <section class="content-box">
+            <h2 class="section-title">Portal Alumnos</h2>
+            <p class="lead-text">Trámites y consultas disponibles para estudiantes del C.E.T. N°1.</p>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <h4>📝 Inscripción a Mesa de Examen</h4>
+                    <p>Anotate para rendir en el turno correspondiente, indicando materia y curso.</p>
+                    <a href="inscripcion_mesa.php" class="btn btn-primary">Ir al formulario</a>
+                </div>
+                <div class="value-card">
+                    <h4>📄 Consulta de Analítico Incompleto</h4>
+                    <p>Consultá el estado de tu analítico si todavía estás cursando o adeudás materias.</p>
+                    <a href="analitico_incompleto.php" class="btn btn-primary">Ir al formulario</a>
+                </div>
+                <div class="value-card">
+                    <h4>🎓 Consulta de Analítico Final de Carrera</h4>
+                    <p>Solicitá información sobre tu analítico final una vez egresado/a.</p>
+                    <a href="analitico_final.php" class="btn btn-primary">Ir al formulario</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>C.E.T. N°1 General Roca — La Pampa 1020 — Formando técnicos desde 1938</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

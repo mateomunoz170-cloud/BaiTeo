@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="proyectos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="../escudo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../escudo.png" alt="Escudo C.E.T. N°1" class="logo-img">
+                C.E.T. N°1
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                    <a href="../Nosotros/Nosotros.html">Nosotros</a>
+                    <ul class="submenu">
+                        <li><a href="../Nosotros/Portal Alumnos/portal-alumnos.html">Portal Alumnos</a></li>
+                        <li><a href="../Nosotros/Portal Docentes/portal-docentes.html">Portal Docentes</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="Proyectos.html"  class="active">Proyectos</a></li>
+                    <li><a href="../Php/foro.php">Foro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb"><a href="Inicio.html">Inicio</a> / Proyectos</div>
+
+        <section class="intro-section">
+            <h2 class="section-title">Innovación Estudiantil</h2>
+            <p class="lead-text">Galería de proyectos destacados creados por estudiantes en los laboratorios de informática y talleres mecánicos.</p>
+            
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="informatica">Informática</button>
+                <button class="filter-btn" data-filter="mecanica">Mecánica</button>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <article class="project-card" data-category="informatica">
+                <div class="card-header">
+                    <span class="badge">Informática</span>
+                    <span class="year">2026</span>
+                </div>
+                <h3>Sistema de Gestión Escolar</h3>
+                <p>Plataforma web con interfaz responsive para administrar asistencias, calificaciones y legajos en tiempo real.</p>
+            </article>
+
+            <article class="project-card" data-category="informatica">
+                <div class="card-header">
+                    <span class="badge">Informática</span>
+                    <span class="year">2026</span>
+                </div>
+                <h3>Página Web Oficial C.E.T. N°1</h3>
+                <p>Rediseño moderno con estándares web actuales, paleta institucional celeste y componentes interactivos sin librerías externas.</p>
+            </article>
+
+            <article class="project-card" data-category="informatica">
+                <div class="card-header">
+                    <span class="badge">Informática</span>
+                    <span class="year">2025</span>
+                </div>
+                <h3>Sistema de Control de Pañol</h3>
+                <p>Software móvil y web para digitalizar el préstamo de herramientas e insumos del área de taller.</p>
+            </article>
+
+            <article class="project-card" data-category="mecanica">
+                <div class="card-header">
+                    <span class="badge">Mecánica</span>
+                    <span class="year">2025</span>
+                </div>
+                <h3>Prototipo de Mecanizado CNC</h3>
+                <p>Piezas de precisión diseñadas en CAD 3D e introducidas al torno industrial automatizado CNC.</p>
+            </article>
+
+            <article class="project-card" data-category="mecanica">
+                <div class="card-header">
+                    <span class="badge">Mecánica</span>
+                    <span class="year">2025</span>
+                </div>
+                <h3>Banco de Pruebas Neumático</h3>
+                <p>Módulo didáctico interactivo para simulación de circuitos de automatización industrial con pistones de aire comprimido.</p>
+            </article>
+
+            <article class="project-card" data-category="mecanica">
+                <div class="card-header">
+                    <span class="badge">Mecánica</span>
+                    <span class="year">2024</span>
+                </div>
+                <h3>Estructura Metálica TIG</h3>
+                <p>Chasis tubular reforzado fabricado con técnicas de soldadura avanzada en atmósfera inerte.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>C.E.T. N°1 General Roca — La Pampa 1020 — Formando técnicos desde 1938</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
